@@ -16,6 +16,11 @@
 - [Quarkus](https://docs.localstack.cloud/user-guide/integrations/quarkus/): Run LocalStack in your Quarkus application.
 - [Spring Cloud AWS](https://github.com/awspring/spring-cloud-aws): Run LocalStack your Spring and Spring Boot applications.
 
+## Continuous Integration (CI) Systems
+
+- [GitHub Actions](https://github.com/localstack/setup-localstack/): Run LocalStack in your GitHub Actions workflows.
+- [CircleCI](https://circleci.com/developer/orbs/orb/localstack/platform): Run LocalStack in your CircleCI workflows.
+
 ## Docker images
 
 - [`localstack/localstack`](https://hub.docker.com/r/localstack/localstack): LocalStack Community Edition Docker image.
