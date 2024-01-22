@@ -10,6 +10,12 @@
 - [`serverless-localstack`](https://docs.localstack.cloud/user-guide/integrations/serverless-framework/): Run the Serverless Infrastructure as Code framework with LocalStack.
 - [`tflocal`](https://docs.localstack.cloud/user-guide/integrations/terraform/#tflocal-wrapper-script): Run the Terraform/OpenTofu Infrastructure as Code framework with LocalStack.
 
+## Frameworks
+
+- [Testcontainers](https://testcontainers.com/modules/localstack/): Run LocalStack in your integration tests with Testcontainers.
+- [Quarkus](https://docs.localstack.cloud/user-guide/integrations/quarkus/): Run LocalStack in your Quarkus application.
+- [Spring Cloud AWS](https://github.com/awspring/spring-cloud-aws): Run LocalStack your Spring and Spring Boot applications.
+
 ## Docker images
 
 - [`localstack/localstack`](https://hub.docker.com/r/localstack/localstack): LocalStack Community Edition Docker image.
