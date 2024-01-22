@@ -9,3 +9,10 @@
 - [`pulumilocal`](https://docs.localstack.cloud/user-guide/integrations/pulumi/#pulumilocal): Run the Pulumi Infrastructure as Code framework with LocalStack.
 - [`serverless-localstack`](https://docs.localstack.cloud/user-guide/integrations/serverless-framework/): Run the Serverless Infrastructure as Code framework with LocalStack.
 - [`tflocal`](https://docs.localstack.cloud/user-guide/integrations/terraform/#tflocal-wrapper-script): Run the Terraform/OpenTofu Infrastructure as Code framework with LocalStack.
+
+## Docker images
+
+- [`localstack/localstack`](https://hub.docker.com/r/localstack/localstack): LocalStack Community Edition Docker image.
+- [`localstack/localstack-pro`](https://hub.docker.com/r/localstack/localstack-pro): LocalStack Pro Docker image.
+- [`localstack/localstack:s3-latest`](https://hub.docker.com/r/localstack/localstack:s3-latest): LocalStack S3 Docker image.
+- [`localstack/localstack-pro:latest-bigdata`](https://hub.docker.com/r/localstack/localstack-pro:latest-bigdata): LocalStack Pro with Big Data dependencies pre-installed.
