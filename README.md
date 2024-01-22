@@ -1,3 +1,11 @@
+## User Interface
+
+- [LocalStack Web Application](https://app.localstack.cloud/): Web application to interact with LocalStack services, manage resources, and use advanced features.
+- [LocalStack Desktop](https://docs.localstack.cloud/user-guide/tools/localstack-desktop/): Desktop application to manage the container, view resources, and inspect logs.
+- [Docker Desktop Extension](https://hub.docker.com/extensions/localstack/localstack-docker-desktop): Docker Desktop extension to manage the container and view logs.
+- [Commandeer](https://getcommandeer.com/): Desktop application to manage LocalStack and test your applications locally with an IDE experience.
+- [SQS Admin](https://github.com/PacoVK/sqs-admin): Local Web Application to manage SQS queues.
+
 ## Integrations
 
 - [`arclocal`](https://docs.localstack.cloud/user-guide/integrations/architect/): Run Architect Infrastructure as Code framework with LocalStack.
