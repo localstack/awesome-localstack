@@ -1,3 +1,30 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/localstack/localstack/master/doc/localstack-readme-banner.svg" alt="LocalStack - A fully functional local cloud stack">
+</p>
+<p align="center">  
+  <a href="https://localstack.cloud/slack">
+  <img src="https://img.shields.io/badge/Slack-@localstack-purple.svg" alt="Slack">
+  </a>
+<a href="https://twitter.com/localstack">
+  <img src="https://img.shields.io/badge/Twitter-@localstack-9cf.svg" alt="Twitter">
+</a>
+<a href="https://www.linkedin.com/company/localstack-cloud">
+  <img src="https://img.shields.io/badge/LinkedIn-@localstack-darkblue.svg" alt="LinkedIn">
+</a>
+<a href="https://www.youtube.com/@localstack">
+  <img src="https://img.shields.io/badge/YouTube-@localstack-red.svg" alt="YouTube">
+</a>
+<a href="https://discuss.localstack.cloud">
+  <img src="https://img.shields.io/badge/Discuss-@localstack-white.svg" alt="Discuss">
+</a>
+</p>
+
+# Awesome LocalStack [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
+A curated list of [LocalStack](https://localstack.cloud) integrations, tools, frameworks, and platforms.
+
+If you want to contribute to this list, then please read the [contributing guidelines](). Inspired by the  [awesome](https://github.com/sindresorhus/awesome) list.
+
 ## User Interface
 
 - [LocalStack Web Application](https://app.localstack.cloud/): Web application to interact with LocalStack services, manage resources, and use advanced features.
@@ -42,12 +69,20 @@
 - [LocalStack .NET Client](https://github.com/localstack-dotnet/localstack-dotnet-client): .NET client library for LocalStack.
 - [LocalStack Go Client](https://github.com/elgohr/go-localstack): Go client library for LocalStack.
 
-## Toolkits
+## Tools
 
 - [LocalSurf](https://docs.localstack.cloud/user-guide/tools/localsurf/): Browser plugin to redirect AWS service calls to LocalStack.
 - [LocalStack VS Code Extension](https://github.com/localstack/localstack-vscode-extension): VS Code extension to deploy and manage Lambda functions on LocalStack.
 - [Former2](https://former2.com/): Generate infrastructure as code templates from existing resources in your locally running LocalStack instance.
 - [Leapp](https://docs.leapp.cloud/latest/configuring-session/configure-localstack/): Create LocalStack sessions in Leapp to connect to the cloud emulator.
+- [Cloudlens](https://github.com/one2nc/cloudlens): k9s like CLI for analyzing and managing local AWS resources in LocalStack.
+- [diapretty](https://github.com/silv-io/diapretty): LocalStack diagnosis pretty printer to create create diagnostics reports via the diagnostics endpoint.
+
+## Platforms
+
+- [Helm Charts](https://github.com/localstack/helm-charts): Helm charts to deploy LocalStack on Kubernetes.
+- [Gitpod](https://github.com/whummer/localstack-gitpod-demo): Run LocalStack in Gitpod, a cloud-based IDE.
+- [OpenShift](https://docs.localstack.cloud/user-guide/integrations/openshift/): Run LocalStack in OpenShift, a Kubernetes distribution.
 
 ## Extensions
 
