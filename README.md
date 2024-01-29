@@ -33,5 +33,27 @@
 
 - [`localstack/localstack`](https://hub.docker.com/r/localstack/localstack): LocalStack Community Edition Docker image.
 - [`localstack/localstack-pro`](https://hub.docker.com/r/localstack/localstack-pro): LocalStack Pro Docker image.
-- [`localstack/localstack:s3-latest`](https://hub.docker.com/r/localstack/localstack:s3-latest): LocalStack S3 Docker image.
-- [`localstack/localstack-pro:latest-bigdata`](https://hub.docker.com/r/localstack/localstack-pro:latest-bigdata): LocalStack Pro with Big Data dependencies pre-installed.
+- [`localstack/localstack:s3-latest`](https://hub.docker.com/r/localstack/localstack): LocalStack S3 Docker image.
+- [`localstack/localstack-pro:latest-bigdata`](https://hub.docker.com/r/localstack/localstack-pro): LocalStack Pro with Big Data dependencies pre-installed.
+
+## Client libraries
+
+- [LocalStack Python Client](https://github.com/localstack/localstack-python-client): Python client library for LocalStack.
+- [LocalStack .NET Client](https://github.com/localstack-dotnet/localstack-dotnet-client): .NET client library for LocalStack.
+- [LocalStack Go Client](https://github.com/elgohr/go-localstack): Go client library for LocalStack.
+
+## Toolkits
+
+- [LocalSurf](https://docs.localstack.cloud/user-guide/tools/localsurf/): Browser plugin to redirect AWS service calls to LocalStack.
+- [LocalStack VS Code Extension](https://github.com/localstack/localstack-vscode-extension): VS Code extension to deploy and manage Lambda functions on LocalStack.
+- [Former2](https://former2.com/): Generate infrastructure as code templates from existing resources in your locally running LocalStack instance.
+- [Leapp](https://docs.leapp.cloud/latest/configuring-session/configure-localstack/): Create LocalStack sessions in Leapp to connect to the cloud emulator.
+
+## Extensions
+
+- [httpbin](https://pypi.org/project/localstack-extension-httpbin/): LocalStack extension to run the httpbin service.
+- [Diagnosis Viewer](https://pypi.org/project/localstack-extension-diagnosis-viewer/): LocalStack extension to view the diagnosis report.
+- [Mailhog](https://pypi.org/project/localstack-extension-mailhog/): LocalStack extension to run the Mailhog service.
+- [Authress](https://pypi.org/project/localstack-extension-authress/): LocalStack extension to run the Authress server locally.
+- [Stripe](https://pypi.org/project/localstack-extension-stripe/): LocalStack extension to run a stateful Stripe service mock.
+- [Miniflare](https://pypi.org/project/localstack-extension-miniflare/): LocalStack extension to run Miniflare, a serverless Cloudflare worker emulator.
