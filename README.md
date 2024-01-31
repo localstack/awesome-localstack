@@ -72,7 +72,7 @@ If you want to contribute to this list, then please read the [contributing guide
 ## Tools
 
 - [LocalSurf](https://docs.localstack.cloud/user-guide/tools/localsurf/): Browser plugin to redirect AWS service calls to LocalStack.
-- [LocalStack VS Code Extension](https://github.com/localstack/localstack-vscode-extension): VS Code extension to deploy and manage Lambda functions on LocalStack.
+- [LocalStack VS Code Extension](https://github.com/localstack/localstack-vscode-extension): Visual Studio (VS) Code extension to deploy and manage Lambda functions on LocalStack.
 - [Former2](https://former2.com/): Generate infrastructure as code templates from existing resources in your locally running LocalStack instance.
 - [Leapp](https://docs.leapp.cloud/latest/configuring-session/configure-localstack/): Create LocalStack sessions in Leapp to connect to the cloud emulator.
 - [Cloudlens](https://github.com/one2nc/cloudlens): k9s like CLI for analyzing and managing local AWS resources in LocalStack.
