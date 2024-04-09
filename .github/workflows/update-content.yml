@@ -5,7 +5,7 @@ name: Update README with New Content
 #    # Runs at 00:00 UTC every Sunday
 #    - cron: '0 0 * * 0'
 
-#on: [push]
+on: [push]
 
 jobs:
   update-readme:
@@ -21,17 +21,20 @@ jobs:
       - name: Check for New Tutorials and Update README
         run: |
           cd docs/content/en/tutorials/
+          
+          tutorials_section="## Tutorials\n\n"
 
-          new_folders=$(find . -maxdepth 1 -type d -mtime -7)
-
-          for folder in $new_folders; do
-            folder_name=$(basename "$folder")
+          for folder in */; do
+            folder_name=${folder%/}
 
             title=$(grep '^title:' "$folder/index.md" | sed 's/title: //')
 
-            new_url="https://docs.localstack.cloud/tutorials/$folder_name"
+            tutorials_section+="- [$title](https://docs.localstack.cloud/tutorials/$folder_name)\n"
+          done
 
-            awk -v new_line="- [$title]($new_url)" '/^### Tutorials/{print;getline;print $0"\n"new_line;next}1' ../../../../README.md > temp.md && mv temp.md ../../../../README.md
+          sed -i "/## Tutorials/,\$d" ../../../../README.md
+          echo "$tutorials_section" >> ../../../../README.md
+            
           done
 
       - name: Commit and Push Changes
