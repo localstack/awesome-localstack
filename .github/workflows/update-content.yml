@@ -22,17 +22,17 @@ jobs:
         run: |
           cd docs/content/en/tutorials/
           
-          tutorials_section="## Tutorials\n\n"
+          tutorials_section="\n\n"
 
           for folder in */; do
             folder_name=${folder%/}
 
             title=$(grep '^title:' "$folder/index.md" | sed 's/title: //')
 
-            tutorials_section+="- [$title](https://docs.localstack.cloud/tutorials/$folder_name)\n"
+            tutorials_section+=" - [$title](https://docs.localstack.cloud/tutorials/$folder_name)\n"
           done
 
-          tutorials_section+="\n## Blog Posts\n"
+          tutorials_section+="\n\n"
 
           sed -i '/## Tutorials/,/## Blog Posts/{//!d}' ../../../../README.md
           echo "$tutorials_section" | sed '/^$/d' >> ../../../../README.md
