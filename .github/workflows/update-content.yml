@@ -5,7 +5,7 @@ name: Update README with New Content
 #    # Runs at 00:00 UTC every Sunday
 #    - cron: '0 0 * * 0'
 
-on: [push]
+#on: [push]
 
 jobs:
   update-readme:
@@ -29,7 +29,7 @@ jobs:
 
             title=$(grep '^title:' "$folder/index.md" | sed 's/title: //')
 
-            tutorials_section+=" - [$title](https://docs.localstack.cloud/tutorials/$folder_name)\n"
+            tutorials_section+=" - [$title](https://docs.localstack.cloud/tutorials/$folder_name) \n"
           done
 
           tutorials_section+="\n\n"
