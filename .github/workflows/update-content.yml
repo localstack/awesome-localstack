@@ -22,7 +22,7 @@ jobs:
         run: |
           cd docs/content/en/tutorials/
 
-          new_folders=$(find . -maxdepth 1 -type d -mtime -60)
+          new_folders=$(find . -maxdepth 1 -type d -mtime -7)
 
           for folder in $new_folders; do
             folder_name=$(basename "$folder")
