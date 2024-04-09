@@ -5,12 +5,7 @@ name: Update README with New Content
 #    # Runs at 00:00 UTC every Sunday
 #    - cron: '0 0 * * 0'
 
-on:
-  push:
-    paths:
-      - README.md
-    branches:
-      - main
+on: [push]
 
 jobs:
   update-readme:
