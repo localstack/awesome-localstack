@@ -34,8 +34,6 @@ jobs:
 
           sed -i "/## Tutorials/,\$d" ../../../../README.md
           echo "$tutorials_section" >> ../../../../README.md
-            
-          done
 
       - name: Commit and Push Changes
         run: |
