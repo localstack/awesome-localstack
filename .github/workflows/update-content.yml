@@ -31,7 +31,7 @@ jobs:
 
             new_url="https://docs.localstack.cloud/tutorials/$folder_name"
 
-            awk -v new_line="- [$title]($new_url)" '/^### Tutorials/{print;getline;print $0"\n"new_line;next}1' README.md > temp.md && mv temp.md README.md
+            awk -v new_line="- [$title]($new_url)" '/^### Tutorials/{print;getline;print $0"\n"new_line;next}1' ../../../../README.md > temp.md && mv temp.md ../../../../README.md
           done
 
       - name: Commit and Push Changes
