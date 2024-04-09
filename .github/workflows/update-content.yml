@@ -29,11 +29,13 @@ jobs:
 
             title=$(grep '^title:' "$folder/index.md" | sed 's/title: //')
 
-            tutorials_section+=" - [$title](https://docs.localstack.cloud/tutorials/$folder_name)\n"
+            tutorials_section+="- [$title](https://docs.localstack.cloud/tutorials/$folder_name)\n"
           done
 
+          tutorials_section+="\n## Blog Posts\n"
+
           sed -i '/## Tutorials/,/## Blog Posts/{//!d}' ../../../../README.md
-          echo "$tutorials_section" | sed '/^$/d' >> ../../../README.md
+          echo "$tutorials_section" | sed '/^$/d' >> ../../../../README.md
 
       - name: Commit and Push Changes
         run: |
