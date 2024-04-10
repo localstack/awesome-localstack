@@ -31,7 +31,7 @@ jobs:
           
           done
   
-          awk -v new_content="$tutorials_section" '/^## Tutorials/{print;getline;print new_content;next} /^## Blog Posts/{exit}1' ../../../../README.md > temp.md && mv temp.md ../../../../README.md
+          awk -v new_content="$tutorials_section" '/^### Tutorials/{print;getline;print new_content;next} /^### Blog Posts/{exit}1' ../../../../README.md > temp.md && mv temp.md ../../../../README.md
 
       - name: Commit and Push Changes
         run: |
