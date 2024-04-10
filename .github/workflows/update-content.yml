@@ -40,6 +40,6 @@ jobs:
           git config --global user.name 'AncaGhenade'
           git config --global user.email 'ancaghenade@gmail.com'
           git add README.md
-          git commit -m "Update README with new tutorials"
-          git push
+          git diff --quiet && git diff --staged --quiet || (git add README.md && git commit -m "Update README with new tutorials" && git push)
+          
 
