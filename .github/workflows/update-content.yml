@@ -80,38 +80,6 @@ jobs:
           /^### Videos/ {print; print academy; next;}
           /^### Blog Posts/ { print blogs; next;}
           1' README.md > temp.md && mv temp.md README.md
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          cd docs/content/en/tutorials/
-          
-          tutorials_section="\n"
-
-          for folder in */; do
-            folder_name=${folder%/}
-            title=$(grep '^title:' "$folder/index.md" | sed 's/title: //')
-            tutorials_section+="- [$title](https://docs.localstack.cloud/tutorials/$folder_name)\n"
-          
-          done
-          
-          sed -i '/### Tutorials/,/### Blog Posts/{//!d}' ../../../../README.md
-
-          awk -v new_content="$tutorials_section" '/^### Tutorials/{print;getline;print new_content;next} /^### Blog Posts/{exit}1' ../../../../README.md > temp.md && mv temp.md ../../../../README.md
 
       - name: Commit and Push Changes
         run: |
