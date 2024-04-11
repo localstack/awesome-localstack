@@ -18,8 +18,78 @@ jobs:
       - name: Clone Second Repository
         run: git clone https://github.com/localstack/docs.git
 
-      - name: Check for New Tutorials and Update README
+      - name: Gather Tutorials and Videos
         run: |
+          tutorials_section="### Tutorials \n\n"
+  
+          for folder in */; do
+            folder_name=${folder%/}
+            title=$(grep '^title:' "$folder/index.md" | sed 's/title: //')
+            tutorials_section+="- [$title](https://docs.localstack.cloud/tutorials/$folder_name)\n"
+          done
+          
+          cd ../academy/
+          for folder in */; do
+            academy_section+="#### $(grep '^title:' "$folder/_index.md" | sed 's/title: //')\n\n"
+            if [ -d "$folder" ]; then
+              for subfolder in "$folder"*/; do
+                title=$(grep '^title:' "$subfolder/index.md" | sed 's/title: //')
+                url=$(grep '^url:' "$subfolder/index.md" | sed 's/url: //')
+                academy_section+="- [$title](https://docs.localstack.cloud/$url)\n"
+              done
+            fi
+          done
+  
+          cd ../../../../
+          
+      - name: Clone Second Repository
+        run: git clone https://github.com/localstack/localstack-blog.github.io.git
+
+      - name: Gather Blog Posts
+        run: |
+  
+          cd localstack-blog.github.io/content/
+          blog_section="### Blog Posts \n\n"
+  
+          for folder in */; do
+            folder_name=${folder%/}
+            title=$(grep '^title:' "$folder/index.md" | sed 's/title: //')
+            blog_section+="- [$title](https://blog.localstack.cloud/$folder_name)\n"
+          done
+  
+          cd ../..
+          
+          sed -i '/## Content/,$d' README.md
+          echo "## Content" >> README.md
+          echo "" >> README.md
+          echo "### Tutorials" >> README.md
+          echo "### Videos" >> README.md
+          echo "### Blog Posts" >> README.md
+  
+          awk -v tutorials="$tutorials_section" -v academy="$academy_section" -v blogs="$blog_section" '
+          /^## Content/ {print; next}
+          /^### Tutorials/ { print tutorials; next}
+          /^### Videos/ {print; print academy; next;}
+          /^### Blog Posts/ { print blogs; next;}
+          1' README.md > temp.md && mv temp.md README.md
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
           cd docs/content/en/tutorials/
           
           tutorials_section="\n"
@@ -41,5 +111,3 @@ jobs:
           git config --global user.email 'ancaghenade@gmail.com'
           git add README.md
           git diff --quiet && git diff --staged --quiet || (git add README.md && git commit -m "Update README with new tutorials" && git push)
-          
-
