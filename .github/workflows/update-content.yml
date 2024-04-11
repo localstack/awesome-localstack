@@ -36,7 +36,7 @@ jobs:
             if [ -d "$folder" ]; then
               for subfolder in "$folder"*/; do
                 title=$(grep '^title:' "$subfolder/index.md" | sed 's/title: //')
-                url=$(grep '^url:' "$subfolder/index.md" | sed 's/url: //')
+                url=$(grep '^url:' "$subfolder/index.md" | sed 's/url: "\(.*\)"/\1/')
                 academy_section+="- [$title](https://docs.localstack.cloud/$url)\n"
               done
             fi
