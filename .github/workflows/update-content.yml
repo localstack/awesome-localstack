@@ -1,6 +1,7 @@
 name: Update README with New Content
 
 on:
+  workflow_dispatch:
   push:
   schedule:
     # Runs at 00:00 UTC every Sunday
