@@ -111,7 +111,7 @@ If you want to contribute to this list, then please read the [contributing guide
 ### Videos
 #### "LocalStack 101"
 
-- ["Course Overview"](https://docs.localstack.cloud/url: /academy/localstack-101/course-overview/)
+- ["Course Overview"](https://docs.localstack.cloud/)
 - ["What is LocalStack"](https://docs.localstack.cloud//academy/localstack-101/what-is-localstack/)
 - ["Why LocalStack"](https://docs.localstack.cloud//academy/localstack-101/why-localstack/)
 - ["Getting started"](https://docs.localstack.cloud//academy/localstack-101/getting-started/)
@@ -120,7 +120,7 @@ If you want to contribute to this list, then please read the [contributing guide
 - ["Cloud Pods and Collaborative Work"](https://docs.localstack.cloud//academy/localstack-101/cloud-pods/)
 #### "Development & Deployment with LocalStack"
 
-- ["Course Overview"](https://docs.localstack.cloud/url: /academy/localstack-deployment/course-overview/)
+- ["Course Overview"](https://docs.localstack.cloud/)
 - ["Deploy a full fledged containerised application using LocalStack"](https://docs.localstack.cloud//academy/localstack-deployment/deploy-app-ls/)
 - ["LocalStack Integrations - Infrastructure-as-Code and CI tools "](https://docs.localstack.cloud//academy/localstack-deployment/ls-integrations/)
 - ["Creating infrastructure with Terraform locally"](https://docs.localstack.cloud//academy/localstack-deployment/infra-terraform/)
