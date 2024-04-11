@@ -41,6 +41,9 @@ jobs:
               done
             fi
           done
+
+          echo $tutorials_section
+          echo $academy_section
   
           cd ../../../../
           
@@ -60,7 +63,10 @@ jobs:
           done
   
           cd ../..
-          
+
+          echo $blog_section
+          echo $(pwd)
+
           sed -i '/## Content/,$d' README.md
           echo "## Content" >> README.md
           echo "" >> README.md
