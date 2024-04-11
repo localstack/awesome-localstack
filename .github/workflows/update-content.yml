@@ -20,6 +20,8 @@ jobs:
 
       - name: Gather Tutorials and Videos
         run: |
+          cd docs/content/en/tutorials/
+
           tutorials_section="### Tutorials \n\n"
   
           for folder in */; do
