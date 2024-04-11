@@ -1,11 +1,10 @@
 name: Update README with New Content
 
-#on:
-#  schedule:
-#    # Runs at 00:00 UTC every Sunday
-#    - cron: '0 0 * * 0'
-
-on: [push]
+on:
+  push:
+  schedule:
+    # Runs at 00:00 UTC every Sunday
+    - cron: '0 0 * * 0'
 
 jobs:
   update-readme:

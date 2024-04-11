@@ -93,6 +93,8 @@ If you want to contribute to this list, then please read the [contributing guide
 - [Miniflare](https://pypi.org/project/localstack-extension-miniflare/): LocalStack extension to run Miniflare, a serverless Cloudflare worker emulator.
 - [Stripe](https://pypi.org/project/localstack-extension-stripe/): LocalStack extension to run a stateful Stripe service mock.
 
+[//]: # (!! Do not place anything under content - this part is periodically recreated to update list from existing resources.)
+
 ## Content
 
 ### Tutorials 
