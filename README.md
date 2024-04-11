@@ -95,14 +95,6 @@ If you want to contribute to this list, then please read the [contributing guide
 
 ## Content
 
-### Tutorials
 
-- ["Deploying containers on Elastic Container Service (ECS) clusters using Elastic Container Registry (ECR) and AWS Fargate, with LocalStack"](https://docs.localstack.cloud/tutorials/ecs-ecr-container-app)
-- ["Setting up Elastic Load Balancing (ELB) Application Load Balancers using LocalStack, deployed via the Serverless framework"](https://docs.localstack.cloud/tutorials/elb-load-balancing)
-- ["Building a Java Notification app using AWS Java SDK, Simple Email Service (SES), and CloudFormation"](https://docs.localstack.cloud/tutorials/java-notification-app)
-- ["Deploying Lambda container image locally with Elastic Container Registry (ECR) using LocalStack"](https://docs.localstack.cloud/tutorials/lambda-ecr-container-images)
-- ["Replicating cloud resources locally with LocalStack's AWS Replicator extension"](https://docs.localstack.cloud/tutorials/replicate-aws-resources-localstack-extension)
-- ["Creating reproducible machine learning applications using Cloud Pods for persistent state snapshots"](https://docs.localstack.cloud/tutorials/reproducible-machine-learning-cloud-pods)
-- ["Host a static website locally using Simple Storage Service (S3) and Terraform with LocalStack"](https://docs.localstack.cloud/tutorials/s3-static-website-terraform)
-- ["Schema Evolution with Glue Schema Registry and Managed Streaming for Kafka (MSK) using LocalStack"](https://docs.localstack.cloud/tutorials/schema-evolution-glue-msk)
+### Videos
 
