@@ -41,11 +41,20 @@ jobs:
               done
             fi
           done
-
-          echo $tutorials_section
-          echo $academy_section
   
           cd ../../../../
+          
+          sed -i '/## Content/,$d' README.md
+          echo "## Content" >> README.md
+          echo "" >> README.md
+          echo "### Tutorials" >> README.md
+          echo "### Videos" >> README.md
+          
+          awk -v tutorials="$tutorials_section" -v academy="$academy_section" '
+          /^## Content/ {print; next}
+          /^### Tutorials/ { print tutorials; next}
+          /^### Videos/ {print; print academy; next;}
+          1' README.md > temp.md && mv temp.md README.md
           
       - name: Clone Second Repository
         run: git clone https://github.com/localstack/localstack-blog.github.io.git
@@ -64,21 +73,10 @@ jobs:
   
           cd ../..
 
-          echo $blog_section
-          echo $(pwd)
-
-          sed -i '/## Content/,$d' README.md
-          echo "## Content" >> README.md
-          echo "" >> README.md
-          echo "### Tutorials" >> README.md
-          echo "### Videos" >> README.md
           echo "### Blog Posts" >> README.md
   
-          awk -v tutorials="$tutorials_section" -v academy="$academy_section" -v blogs="$blog_section" '
-          /^## Content/ {print; next}
-          /^### Tutorials/ { print tutorials; next}
-          /^### Videos/ {print; print academy; next;}
-          /^### Blog Posts/ { print blogs; next;}
+          awk -v blogs="$blog_section" '
+          /^### Blog Posts/ {print blogs; next;}
           1' README.md > temp.md && mv temp.md README.md
 
       - name: Commit and Push Changes
@@ -86,4 +84,4 @@ jobs:
           git config --global user.name 'AncaGhenade'
           git config --global user.email 'ancaghenade@gmail.com'
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git add README.md && git commit -m "Update README with new tutorials" && git push)
+          git diff --quiet && git diff --staged --quiet || (git add README.md && git commit -m "Update README with new tutorials, videos and blog posts" && git push)
