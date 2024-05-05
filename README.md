@@ -99,6 +99,7 @@ If you want to contribute to this list, then please read the [contributing guide
 
 ### Tutorials 
 
+- ["How To: Collaborative AWS local development with LocalStack’s Cloud Pods"](https://docs.localstack.cloud/tutorials/cloud-pods-collaborative-debugging)
 - ["Deploying containers on Elastic Container Service (ECS) clusters using Elastic Container Registry (ECR) and AWS Fargate, with LocalStack"](https://docs.localstack.cloud/tutorials/ecs-ecr-container-app)
 - ["Setting up Elastic Load Balancing (ELB) Application Load Balancers using LocalStack, deployed via the Serverless framework"](https://docs.localstack.cloud/tutorials/elb-load-balancing)
 - ["Chaos Engineering: Running Experiments with Fault Injection Service"](https://docs.localstack.cloud/tutorials/fault-injection-service-experiments)
