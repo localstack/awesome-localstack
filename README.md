@@ -171,5 +171,6 @@ If you want to contribute to this list, then please read the [contributing guide
 - [CartonCloud utilizes LocalStack for transforming development efficiency and agility!](https://blog.localstack.cloud/2024-03-28-localstack-cartoncloud)
 - [Exploring S3 Mocking Tools — A Comparative Analysis of S3Mock, MinIO, and LocalStack](https://blog.localstack.cloud/2024-04-08-exploring-s3-mocking-tools-a-comparative-analysis-of-s3mock-minio-and-localstack)
 - [Ephemeral Environments with LocalStack & Shipyard](https://blog.localstack.cloud/2024-04-22-ephemeral-environments-with-localstack-shipyard)
+- [Building LocalStack with LocalStack](https://blog.localstack.cloud/2024-05-08-building-localstack-with-localstack)
 - [](https://blog.localstack.cloud/tags)
 
