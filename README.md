@@ -175,5 +175,6 @@ If you want to contribute to this list, then please read the [contributing guide
 - [Ephemeral Environments with LocalStack & Shipyard](https://blog.localstack.cloud/2024-04-22-ephemeral-environments-with-localstack-shipyard)
 - [Building LocalStack with LocalStack](https://blog.localstack.cloud/2024-05-08-building-localstack-with-localstack)
 - ["Introducing LocalStack for Snowflake: The new emulator to build & test data pipelines locally"](https://blog.localstack.cloud/2024-05-22-introducing-localstack-for-snowflake)
+- [LocalStack Neptune development with G.V() — Gremlin IDE](https://blog.localstack.cloud/2024-06-05-localstack-neptune-development-with-gv-gremlin-ide)
 - [](https://blog.localstack.cloud/tags)
 
