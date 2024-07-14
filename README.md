@@ -177,5 +177,6 @@ If you want to contribute to this list, then please read the [contributing guide
 - ["Introducing LocalStack for Snowflake: The new emulator to build & test data pipelines locally"](https://blog.localstack.cloud/2024-05-22-introducing-localstack-for-snowflake)
 - [LocalStack Neptune development with G.V() — Gremlin IDE](https://blog.localstack.cloud/2024-06-05-localstack-neptune-development-with-gv-gremlin-ide)
 - [LocalStack Named to Redpoint InfraRed 100 List](https://blog.localstack.cloud/2024-06-18-redpoint-infrared-100)
+- [Developing cloud AI-powered apps with LocalStack and Ollama](https://blog.localstack.cloud/2024-07-04-develop-cloud-ai-with-ollama-localstack)
 - [](https://blog.localstack.cloud/tags)
 
