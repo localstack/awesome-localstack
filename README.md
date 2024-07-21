@@ -105,6 +105,7 @@ If you want to contribute to this list, then please read the [contributing guide
 - ["Creating ephemeral application previews with LocalStack and GitHub Actions"](https://docs.localstack.cloud/tutorials/ephemeral-application-previews)
 - ["Chaos Engineering: Running Experiments with Fault Injection Service"](https://docs.localstack.cloud/tutorials/fault-injection-service-experiments)
 - ["End-to-End Testing in Gitlab CI with Testcontainers and LocalStack: Understanding Runners and Docker in Docker"](https://docs.localstack.cloud/tutorials/gitlab_ci_testcontainers)
+- ["Generate IAM Policies with LocalStack IAM Policy Stream"](https://docs.localstack.cloud/tutorials/iam-policy-stream)
 - ["Building a Java Notification app using AWS Java SDK, Simple Email Service (SES), and CloudFormation"](https://docs.localstack.cloud/tutorials/java-notification-app)
 - ["Deploying Lambda container image locally with Elastic Container Registry (ECR) using LocalStack"](https://docs.localstack.cloud/tutorials/lambda-ecr-container-images)
 - ["Replicating cloud resources locally with LocalStack's AWS Replicator extension"](https://docs.localstack.cloud/tutorials/replicate-aws-resources-localstack-extension)
