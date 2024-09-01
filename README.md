@@ -179,5 +179,8 @@ If you want to contribute to this list, then please read the [contributing guide
 - [LocalStack Neptune development with G.V() — Gremlin IDE](https://blog.localstack.cloud/2024-06-05-localstack-neptune-development-with-gv-gremlin-ide)
 - [LocalStack Named to Redpoint InfraRed 100 List](https://blog.localstack.cloud/2024-06-18-redpoint-infrared-100)
 - [Developing cloud AI-powered apps with LocalStack and Ollama](https://blog.localstack.cloud/2024-07-04-develop-cloud-ai-with-ollama-localstack)
+- [Simulating outages for local cloud apps with LocalStack Chaos API](https://blog.localstack.cloud/2024-08-26-simulating-outages-for-local-cloud-apps-with-localstack-chaos-api)
+- [Take Your Local Testing to the Cloud with Ephemeral Instances](https://blog.localstack.cloud/2024-08-28-ephemeral-instances)
+- [Announcing the LocalStack 3.7 release!](https://blog.localstack.cloud/2024-08-29-localstack-release-v-3-7-0)
 - [](https://blog.localstack.cloud/tags)
 
