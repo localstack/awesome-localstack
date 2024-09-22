@@ -182,5 +182,6 @@ If you want to contribute to this list, then please read the [contributing guide
 - [Simulating outages for local cloud apps with LocalStack Chaos API](https://blog.localstack.cloud/2024-08-26-simulating-outages-for-local-cloud-apps-with-localstack-chaos-api)
 - [Take Your Local Testing to the Cloud with Ephemeral Instances](https://blog.localstack.cloud/2024-08-28-ephemeral-instances)
 - [Announcing the LocalStack 3.7 release!](https://blog.localstack.cloud/2024-08-29-localstack-release-v-3-7-0)
+- [Accelerate infrastructure testing with LocalStack Cloud Pods & GitHub Actions](https://blog.localstack.cloud/2024-09-19-accelerate-infrastructure-testing-with-localstack-cloud-pods-github-actions)
 - [](https://blog.localstack.cloud/tags)
 
