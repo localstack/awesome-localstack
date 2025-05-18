@@ -32,6 +32,7 @@ If you want to contribute to this list, then please read the [contributing guide
 - [Docker Desktop Extension](https://hub.docker.com/extensions/localstack/localstack-docker-desktop): Docker Desktop extension to manage the container and view logs.
 - [Commandeer](https://getcommandeer.com/): Desktop application to manage LocalStack and test your applications locally with an IDE experience.
 - [SQS Admin](https://github.com/PacoVK/sqs-admin): Local Web Application to manage SQS queues.
+- [Local Admin](https://github.com/Mohammad-Bilal-Bhatti/local-admin): Open localstack Admin UI – Sneak peek your localstack resources with button clicks.
 
 ## Integrations
 
